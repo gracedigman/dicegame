@@ -1,0 +1,58 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #EAD196;
+}
+
+h1 {
+  margin: 100px;
+  font-family: "Press Start 2P", system-ui;
+  text-shadow: 5px 0 #7D0A0A;
+  font-size: 4rem;
+  color: #EEEEEE;
+}
+
+button {
+  display: block;
+  margin: 20px auto; 
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+}
+
+button img {
+  width: 50px; 
+  height: auto;
+}
+
+button:hover img {
+  opacity: 0.7; 
+}
+
+p {
+  font-size: 1rem;
+  color: #BF3131;
+  font-family: "Press Start 2P", system-ui;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 10%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+
+}
