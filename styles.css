@@ -54,5 +54,28 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: "Press Start 2P", system-ui;
+}
 
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .dice {
+    display: block; /* Stacks dice vertically */
+    margin: 20px auto;
+  }
+
+  img {
+    width: 70%; /* Make dice larger on mobile */
+    max-width: 250px;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  p {
+    font-size: 1.2rem; /* Adjust player label size */
+  }
 }
