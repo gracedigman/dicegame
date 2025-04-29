@@ -1,36 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Dicee</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Refresh Me</h1>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Battle</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
 
-      <div class="dice">
-        <p>Player 1</p>
-        <img class="img1" src="images/dice6.png" />
-      </div>
-
-      <div class="dice">
-        <p>Player 2</p>
-        <img class="img2" src="images/dice6.png" />
-
-      </div>
-
-      <button onclick="refreshPage()">
-        <img src="images/refresh.svg" alt="Refresh" />
-      </button>
-
+<body>
+  <div class="container">
+    <!-- Landing Page -->
+    <div class="landing" id="landing">
+      <h1 class="title">Dice Battle</h1>
+      <h2 class="subtitle">Ready to test your luck?</h2>
+      <button class="btn" id="startBtn">Start Game</button>
     </div>
-
-    <footer>🎲 Mary Grace Digman 🎲 </footer>
-
-<script src="index.js"></script>
-  </body>
+    
+    <!-- Game Area -->
+    <div class="game-area" id="gameArea" style="display: none;"> <!-- Ensure it's hidden initially -->
+      <h1 class="title">Dice Battle</h1>
+      
+      <div class="dice-container">
+        <div class="dice">
+          <p>Player 1</p>
+          <img class="dice-img" id="dice1" src="images/dice6.png" alt="Dice 1" />
+          <p class="score" id="score1">Score: 0</p>
+        </div>
+        
+        <div class="dice">
+          <p>Player 2</p>
+          <img class="dice-img" id="dice2" src="images/dice6.png" alt="Dice 2" />
+          <p class="score" id="score2">Score: 0</p>
+        </div>
+      </div>
+      
+      <h2 class="result" id="result">Roll the dice!</h2>
+      
+      <div class="controls">
+        <button class="btn" id="rollBtn">Roll Dice</button>
+        <button class="btn" id="resetBtn">Reset Scores</button>
+        <button class="btn" id="backBtn">Back to Menu</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>🎲 Dice Battle Game by Mary Grace Digman 🎲</footer>
+  
+  <script src="index.js"></script>
+</body>
 </html>
